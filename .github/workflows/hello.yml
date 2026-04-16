@@ -11,3 +11,12 @@ jobs:
         run: |
           echo "Hello, Github Actions!"
           echo "Ritesh Rana"
+
+  say-bye:
+       runs-on: ubuntu-latest
+
+       steps:
+         - name: Print message
+           run: |
+             echo "Bye, Github Actions!"
+             echo "Ritesh Rana"
