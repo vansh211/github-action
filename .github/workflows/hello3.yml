@@ -1,0 +1,14 @@
+name: My First workflow
+
+on: push
+
+jobs:
+  test-uses-action:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: List File
+        run: ls -la
