@@ -1,0 +1,35 @@
+name: deploy server and check it 
+
+on: push
+
+jobs:
+  test-uses-action:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: List File
+        run: ls 
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+
+      - name: Check Node.js version
+        run: node -v
+
+      - name: Install dependencies
+        run: npm install
+      
+      - name: test
+        run: npm test
+
+      - name: deploy server
+        run: node app.js
+
+      
+
+      
+
+      
