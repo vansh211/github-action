@@ -1,4 +1,4 @@
-name: My First workflow
+name: set up node and check it 
 
 on: push
 
@@ -12,5 +12,11 @@ jobs:
 
       - name: List File
         run: ls 
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+
+      - name: Check Node.js version
+        run: node -v
 
       
