@@ -24,5 +24,8 @@ jobs:
 
       - name: final check
         run: ls 
+      
+      - name: test
+        run: npm run test
 
       
