@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint .",
-    "test": "echo  no test specified"
-  },
+  "lint": "eslint .",
+  "build": "echo Building project...",
+  "test": "echo Running tests..."
+},
   "author": "",
   "license": "ISC",
   "description": "",
