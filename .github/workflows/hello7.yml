@@ -1,6 +1,7 @@
-name: Clone Repo 
+name: Clone Repo
 
-on: push
+on:
+  push:
 
 jobs:
 
@@ -64,15 +65,12 @@ jobs:
 
 
   deploy-app:
-    needs: test
     runs-on: ubuntu-latest
+    needs: test
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Install dependencies
-        run: npm install
-
-      - name: Start server
-        run: node server.js
+      - name: Deploy application
+        run: echo "Deployment step executed"
