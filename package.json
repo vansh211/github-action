@@ -3,12 +3,14 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint .",
     "test": "echo  no test specified"
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "eslint": "^9.39.4",
     "express": "^5.2.1",
     "mongoose": "^8.23.0"
   }
